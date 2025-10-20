@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMax Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Use a clean, modern font */
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1300px; /* Max width for the entire view */
+    min-height: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* --- Left Panel (Content Showcase) --- */
+.content-panel {
+    flex: 1; /* Takes up 50% of the space */
+    background-color: #5d20c5; /* Purple background */
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-panel .content-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.content-panel h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content-panel p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+    max-width: 450px;
+}
+
+
+/* --- Right Panel (Login Form) --- */
+.login-panel {
+    flex: 1; /* Takes up 50% of the space */
+    background-color: #1c1c1e; /* Darker panel background */
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-panel .login-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.login-panel h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+}
+
+/* --- Social Login Button --- */
+.social-login-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: background-color 0.2s;
+}
+
+.google-btn {
+    background-color: #333; /* Darker shade for Google button */
+    color: #fff;
+}
+
+.google-btn:hover {
+    background-color: #444;
+}
+
+/* --- Separator --- */
+.or-separator {
+    text-align: center;
+    color: #777;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.or-separator::before,
+.or-separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #333;
+}
+
+.or-separator::before {
+    left: 0;
+}
+
+.or-separator::after {
+    right: 0;
+}
+
+/* --- Login Form --- */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #a050ff; /* Light purple focus */
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #a050ff; /* Light purple link color */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* --- Main Login Button --- */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #9d4edd; /* Vibrant purple */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #8c3edc;
+}
+
+/* --- Register Text --- */
+.register-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.register-link {
+    color: #a050ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Simple Responsiveness (Optional but recommended) --- */
+@media (max-width: 1000px) {
+    .content-panel {
+        display: none; /* Hide the content panel on smaller screens */
+    }
+    .login-panel {
+        flex: none;
+        width: 100%;
+        padding: 50px 10%;
+    }
+    .container {
+        min-height: 100vh;
+        border-radius: 0;
+    }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="content-panel">
+            <div class="content-header">CineMax</div>
+            <h1>The biggest international <br>and local film streaming</h1>
+            <p>Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem semper parturient.</p>
+            </div>
+
+        <div class="login-panel">
+            <div class="login-header">CineMax</div>
+            <h2>Hey there, <br>welcome back</h2>
+
+            <button class="social-login-btn google-btn">
+                Login with Google
+            </button>
+
+            <div class="or-separator">Or login with</div>
+
+            <form class="login-form">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your name">
+
+                <label for="password">Password</label>
+                <div class="password-group">
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <span class="password-icon">👁️</span> 
+                </div>
+                
+                <a href="#" class="forgot-password">Forgot Password</a>
+                
+                <button type="submit" class="login-btn">
+                    Login
+                </button>
+            </form>
+            
+            <div class="register-text">
+                Don't have an account? <a href="#" class="register-link">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
