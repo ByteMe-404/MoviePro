@@ -9,7 +9,7 @@ if (togglePassword && passwordInput) {
 
     togglePassword.src =
       type === "password"
-        ? "/assets/icons/eye-off.png"
-        : "/assets/icons/eye-on.png";
+        ? "../assets/icons/eye-off.png"
+        : "../assets/icons/eye-on.png";
   });
 }
