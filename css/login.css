@@ -115,6 +115,9 @@ body {
   background: #3b5998;
   color: #fff;
 }
+.facebook img{
+  width: 28px;
+}
 
 .social-btn:hover {
   opacity: 0.9;
