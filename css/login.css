@@ -219,9 +219,10 @@ body {
 /* ---------- Responsive ---------- */
 
 /* ---------- Responsive ---------- */
-@media (max-width: 900px) {
+@media (max-width: 400px) {
   .container {
     flex-direction: column;
+    
     height: auto;
   }
 
