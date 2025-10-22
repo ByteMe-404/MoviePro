@@ -1,15 +1,16 @@
-const passwordInput = document.getElementById("password");
-const togglePassword = document.getElementById("togglePassword");
+// Select all toggle icons on the page
+const toggleIcons = document.querySelectorAll(".toggle-icon");
 
-if (togglePassword && passwordInput) {
-  togglePassword.addEventListener("click", () => {
-    const type =
-      passwordInput.getAttribute("type") === "password" ? "text" : "password";
-    passwordInput.setAttribute("type", type);
+toggleIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    const input = icon.previousElementSibling;
 
-    togglePassword.src =
-      type === "password"
-        ? "../assets/icons/eye-off.png"
-        : "../assets/icons/eye-on.png";
+    if (input.type === "password") {
+      input.type = "text";
+      icon.src = "../assets/icons/eye-on.png";
+    } else {
+      input.type = "password";
+      icon.src = "../assets/icons/eye-off.png";
+    }
   });
-}
+});

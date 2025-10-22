@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left side -->
+    <div class="left-side">
+      <div class="content">
+        <h1>Offers ad-free viewing of high quality</h1>
+        <p>Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem semper parturient.</p>
+        <div class="mockup">
+          <img src="../assets/images/mockup2.png" alt="Mockup">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div class="right-side">
+      <div class="form-section">
+        <h2>Movie Pro</h2>
+        <h3>Register</h3>
+        <form id="registerForm">
+          <div class="input-group">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="input-group password-field">
+            <input type="password" id="password" placeholder="Password" required />
+            <img src="../assets/icons/eye-off.png" class="toggle-icon" id="togglePassword" alt="toggle">
+          </div>
+          <div class="input-group password-field">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required />
+            <img src="../assets/icons/eye-off.png" class="toggle-icon" id="toggleConfirm" alt="toggle">
+          </div>
+          <button type="submit" class="submit-btn">Register</button>
+          <p class="bottom-text">Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+<!-- <script src="../js/eye-on-off.js"></script> -->
+
+</body>
+</html>
