@@ -217,46 +217,50 @@ body {
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
-  .mockup img {
-    max-width: 480px;
-  }
-}
 
+/* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
+    height: auto;
   }
 
-  .left-side{
-    display: none;
+  /* Hide the left section entirely */
+  .left-side {
+    display: none !important;
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
+
+  /* Expand right side */
   .right-side {
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 
-  .mockup img {
-    max-width: 90%;
+  .form-section {
+    width: 100%;
+    max-width: 400px;
   }
 
   .form-section h2 {
     font-size: 1.6rem;
   }
-}
 
-@media (max-width: 600px) {
-  .left-side .text-box h1 {
-    font-size: 1.5rem;
+  .social-login {
+    flex-direction: column;
   }
 
-  .left-side .text-box p {
+  .social-btn {
     font-size: 0.9rem;
+    padding: 12px;
   }
 
-  .submit-btn {
-    font-size: 0.95rem;
-    padding: 10px;
+  .divider span {
+    background-color: #0e0e10;
   }
 }
