@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add loader CSS link dynamically
   const cssLink = document.createElement("link");
   cssLink.rel = "stylesheet";
-  cssLink.href = "../css/styles.css";
+  cssLink.href = "../css/loader.css";
   document.head.appendChild(cssLink);
 
   // Add loader HTML dynamically
