@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(cssLink);
 
   // Add loader HTML dynamically
+  
   const loaderHTML = `
     <div id="loader">
       <div class="spinner"></div>
