@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 :root{
-  --rad :50px;
+  --rad:50px;
 }
 
 body {
@@ -99,7 +99,7 @@ body {
   gap: 10px;
   padding: 10px;
   border: none;
-  border-radius: var(--rad);
+  border-radius:var(--rad);
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
