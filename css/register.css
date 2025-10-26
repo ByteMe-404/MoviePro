@@ -83,6 +83,9 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
+
 }
 
 .logo span {
@@ -174,4 +177,8 @@ body {
   .form-section {
     max-width: 400px;
   }
+}
+
+.logo{
+  cursor: pointer;
 }

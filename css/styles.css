@@ -54,16 +54,24 @@ body {
 }
 
 
-.main{
+.main {
+  margin-top: 50px;
+  width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-.gif{
-  height: 500px;
-  width:  500px;
-}
-.gif img{
+
+.gif {
+  width: 100%;
   height: 100%;
-  width: auto;
+}
+
+.gif img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover;  */
+  display: block;
 }
