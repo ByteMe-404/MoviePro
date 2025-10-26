@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #f3f4f6;
   font-family: Arial, sans-serif;
 }
 
@@ -52,4 +51,19 @@ body {
 
 .nav-links .signup:hover {
   background-color: #2563eb;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gif{
+  height: 500px;
+  width:  500px;
+}
+.gif img{
+  height: 100%;
+  width: auto;
 }
