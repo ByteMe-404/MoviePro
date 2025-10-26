@@ -79,6 +79,16 @@ body {
   font-weight: 500;
 }
 
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #3b82f6; 
+}
+
 /* ---------- Input Fields ---------- */
 .input-group {
   margin-bottom: 1rem;
