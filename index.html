@@ -3,27 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Pro</title>
+  <title>MoviePro</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="logo">
-      Movie<span>Pro</span>
-    </div>
-
-    <div class="nav-links">
-      <a href="pages/login.html" class="login">Log In</a>
-      <a href="pages/register.html" class="signup">Sign Up</a>
-    </div>
-  </nav>
-
-  <div class="main">
-    <div class="gif">
-      <img src="assets/images/gif/wave.gif" alt="">
-    </div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    Movie<span>Pro</span>
   </div>
 
+  <div class="nav-links">
+    <a href="pages/login.html">Log In</a>
+    <a href="pages/register.html">Sign Up</a>
+    <a href="pages/dashboard.html">Dashboard</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Unlimited Movies & Series</h1>
+  <p>Watch anywhere. Cancel anytime.</p>
+</section>
+
+<!-- CONTENT -->
+<main class="content">
+
+  <!-- TOP RATED -->
+  <section class="row">
+    <h2>Top Rated</h2>
+    <div class="slider ranked" id="top-rated"></div>
+  </section>
+
+  <!-- ACTION -->
+  <section class="row">
+    <h2>Best of Action</h2>
+    <div class="slider" id="action"></div>
+  </section>
+
+  <!-- POPULAR -->
+  <section class="row">
+    <h2>Most Popular</h2>
+    <div class="slider" id="popular"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2025 MoviePro
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
